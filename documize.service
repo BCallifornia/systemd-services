@@ -1,7 +1,7 @@
 [Unit]
 Description=Documize the free Confluence Alternative
 Requires=network.target
-After=postrgresql.service
+After=postgresql.service
 
 [Service]
 Type=simple
