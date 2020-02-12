@@ -1,11 +1,12 @@
 [Unit]
 Description=Documize the free Confluence Alternative
-Requires=Network.target
-After=postrgres
+Requires=network.target
+After=postrgresql.service
 
 [Service]
 Type=simple
 User=vagrant
+WorkingDirectory=/opt/documize/
 ExecStart=/opt/documize/documize-community-linux-amd64 settings.toml
 
 [Install]
