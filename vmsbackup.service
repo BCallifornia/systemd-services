@@ -1,0 +1,11 @@
+[Unit]
+Description=Virtual Machine Service Backup
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/bin/vmsbackup.sh
+WorkingDirectory=/home/vbox/
+User=vbox
+
+[Install]
+WantedBy=multi-user.target
